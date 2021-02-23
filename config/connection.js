@@ -7,7 +7,7 @@ mysql.createConnection({
   port: 3306,
   user: 'root',
   // NOTE: Be sure to add your MySQL password here!
-  password: 'flower34777',
+  password: '',
   database: 'cat_db',
 });
 
