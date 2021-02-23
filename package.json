@@ -1,19 +1,30 @@
 {
-  "name": "mvc_design",
+  "name": "homework13",
   "version": "1.0.0",
-  "description": "",
+  "description": "### Overview",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelinama/Eat-da-burger.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angelinama/Eat-da-burger/issues"
+  },
+  "homepage": "https://github.com/angelinama/Eat-da-burger#readme",
   "dependencies": {
-    "express": "^4.16.3",
-    "express-handlebars": "^3.0.0",
-    "mysql": "^2.16.0"
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "mysql": "^2.18.1"
   },
   "devDependencies": {
-    "handlebars-helper-css": "^0.1.0"
+    "handlebars-helper-css": "^0.1.0",
+    "nodemon": "^2.0.7"
   }
 }
