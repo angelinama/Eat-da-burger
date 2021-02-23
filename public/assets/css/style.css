@@ -7,7 +7,7 @@ body {
   font-family: 'Pacifico', cursive;
 }
 
-li, button {
+.list-group-item, button {
   padding: 5px;
   margin: 5px;
   background: #faebd7;
