@@ -1,9 +1,13 @@
+	<div class="jumbotron jumbotron-fluid">
+		<h1 class="display-4 text-center align-middle">Eat da burger!</h1>
+		<img src="https://media.giphy.com/media/if9pYuDpOD7SobA5rM/giphy.gif" alt="burger" class="rounded mx-auto d-block">
+	</div>
 <h2>available burgers!</h2>
 
 <ul>
   {{#each burgers}}
-  {{#unless isDevoured}}
-  {{> burgers/single-burger isDevoured=true}}
+  {{#unless devoured}}
+  {{> burgers/single-burger devoured=true}}
   {{/unless}}
   {{/each}}
 </ul>
@@ -12,8 +16,8 @@
 
 <ul>
   {{#each burgers}}
-  {{#if isDevoured}}
-  {{> burgers/single-burger isDevoured=false}}
+  {{#if devoured}}
+  {{> burgers/single-burger devoured=false}}
   {{/if}}
   {{/each}}
 </ul>
@@ -23,14 +27,14 @@
 
   <div class="form-group">
     <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
+    <input type="text" id="ca" name="burger_name">
   </div>
 
-  <div class="form-group">
+  {{!-- <div class="form-group"> --}}
     {{!-- <label for="sleepy">Sleepy?</label><br>
     <input type="radio" name="sleepy" value="1" id="sleepy" checked> Sleepy!<br>
     <input type="radio" name="sleepy" value="0" id="awake"> Awake --}}
-  </div>
+  {{!-- </div> --}}
 
   <button type="submit">Add a burger</button>
 </form>
