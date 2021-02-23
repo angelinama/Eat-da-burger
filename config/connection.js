@@ -9,7 +9,7 @@ mysql.createConnection({
   user: 'root',
   // NOTE: Be sure to add your MySQL password here!
   password: process.env.DB_PASSWORD,
-  database: 'burger_db',
+  database: 'burgers_db',
 });
 
 // Make connection.
