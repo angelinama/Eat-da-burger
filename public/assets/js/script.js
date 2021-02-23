@@ -75,23 +75,23 @@ document.addEventListener('DOMContentLoaded', (event) => {
   }
 
   // // DELETE
-  // const deleteCatBtns = document.querySelectorAll('.delete-burger');
+  const deleteCatBtns = document.querySelectorAll('.delete-burger');
 
-  // // Set up the event listeners for each delete button
-  // deleteCatBtns.forEach((button) => {
-  //   button.addEventListener('click', (e) => {
-  //     const id = e.target.getAttribute('data-id');
+  // Set up the event listeners for each delete button
+  deleteCatBtns.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      const id = e.target.getAttribute('data-id');
 
-  //     // Send the delete request
-  //     fetch(`/api/burgers/${id}`, {
-  //       method: 'DELETE',
-  //     }).then((res) => {
-  //       console.log(res);
-  //       console.log(`Deleted burger: ${id}`);
+      // Send the delete request
+      fetch(`/api/burgers/${id}`, {
+        method: 'DELETE',
+      }).then((res) => {
+        console.log(res);
+        console.log(`Deleted burger: ${id}`);
 
-  //       // Reload the page
-  //       location.reload();
-  //     });
-  //   });
-  // });
+        // Reload the page
+        location.reload();
+      });
+    });
+  });
 });

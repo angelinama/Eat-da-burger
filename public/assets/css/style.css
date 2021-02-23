@@ -1,11 +1,17 @@
 body {
   background-color: moccasin;
+  font-family: 'Open Sans', sans-serif;
 }
 
-li {
+.jumbotron, h2 {
+  font-family: 'Pacifico', cursive;
+}
+
+li, button {
   padding: 5px;
   margin: 5px;
   background: #faebd7;
+  font-family: 'Akaya Telivigala', cursive;;
 }
 
 .label {
@@ -20,4 +26,10 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+
+#form-div {
+  margin-top: 30px;
+  padding-top: 20px;
+  height: 180px;
 }
